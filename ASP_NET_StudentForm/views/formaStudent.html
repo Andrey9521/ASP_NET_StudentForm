@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8" />
+    <title>Форма студента</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-6 mx-auto">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h3 class="card-title mb-4 text-center">Додати студента</h3>
+                    <form action="/createStudent" method="post">
+                        <div class="mb-3">
+                            <label for="Name" class="form-label">Ім'я</label>
+                            <input type="text" name="Name" id="Name" class="form-control" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="Age" class="form-label">Вік</label>
+                            <input type="number" name="Age" id="Age" class="form-control" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="Group" class="form-label">Група</label>
+                            <input type="text" name="Group" id="Group" class="form-control" required />
+                        </div>
+                        <div class="form-check mb-3">
+                            <input type="checkbox" name="IsGrade" value="true" class="form-check-input" id="IsGrade" />
+                            <label for="IsGrade" class="form-check-label">Має оцінку</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Зберегти</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
